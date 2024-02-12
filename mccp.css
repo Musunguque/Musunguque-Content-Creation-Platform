@@ -1,0 +1,124 @@
+musunguque.co.ke/
+│
+├── index.html
+├── articles.html
+├── topics.html
+├── about.html
+├── contact.html
+├── login.html
+├── search.html
+│
+├── css/
+│   └── mccp.css
+│
+├── js/
+│   └── mccp.js
+│
+├── images/
+│   ├── logo.png
+│   ├── banner.jpg
+│   └── ...
+│
+├── fonts/
+│   ├── font1.woff
+│   ├── font2.woff
+│   └── ...
+│
+├── templates/
+│   ├── header.html
+│   ├── footer.html
+│   └── ...
+│
+├── media/
+│   ├── video1.mp4
+│   ├── audio1.mp3
+│   └── ...
+│
+├── README.md
+└── LICENSE
+@font-face {
+    font-family: 'mccp';
+    src: url('mccp/mccp1.woff') format('woff'),
+         url('mccp/mccp1.woff2') format('woff2');
+    /* Add more src definitions for different font formats if needed */
+}
+/* Example of a media query for responsiveness */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    /* For example, make the navigation menu items display vertically instead of horizontally */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* Reset CSS */
+/* Your reset styles here */
+
+/* Global Styles */
+body {
+    font-family: 'mccp', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Default background color */
+    color: #333;
+    animation: rainbowBackground 10s infinite; /* Rainbow background animation */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px 0;
+}
+
+/* Article Listing */
+/* Your article listing styles here */
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Rainbow Background Animation */
+@keyframes rainbowBackground {
+    0% { background-color: #ff0000; } /* Red */
+    16.67% { background-color: #ff7f00; } /* Orange */
+    33.33% { background-color: #ffff00; } /* Yellow */
+    50% { background-color: #00ff00; } /* Green */
+    66.67% { background-color: #0000ff; } /* Blue */
+    83.33% { background-color: #4b0082; } /* Indigo */
+    100% { background-color: #9400d3; } /* Violet */
+}
+
+/* Text Animation for h2 */
+h2 {
+    animation: textEnlarge 10s infinite; /* Text animation for h2 */
+}
+
+@keyframes textEnlarge {
+    0% { font-size: 24px; } /* Normal font size */
+    100% { font-size: 48px; } /* Enlarged font size */
+}
